@@ -1,4 +1,18 @@
 
+  
+   
+   
+
+
+
+
+  
+  
+
+    
+
+
+   
     body{
 
     margin:0;
@@ -72,14 +86,18 @@
 
 h1{
     color:#FFD700;
-    font-size:48px;
+    h1{
+    font-size:60px;
+}
     text-align:center;
     margin:10px 0 0;
 }
 
 h2{
     color:white;
-    font-size:30px;
+   h2{
+    font-size:38px;
+}
     text-align:center;
     margin:5px 0 20px;
 }
@@ -141,7 +159,8 @@ h2{
 
 #nomeDJ{
     color:white;
-    font-size:44px;
+   font-size:42px;
+font-weight:bold;
     font-weight:bold;
 }
    .proximoDj{
@@ -158,7 +177,8 @@ h2{
 .proximoDj h2{
     color:#FFD700;
     margin-bottom:20px;
-    font-size:32px;
+   font-size:36px;
+font-weight:bold;
 }
 
 #proximoDJ{
@@ -354,7 +374,7 @@ h2{
     display:inline-block;
     white-space:nowrap;
     color:#FFD700;
-    font-size:20px;
+   font-size:40px;
     font-weight:bold;
     animation:rolarNoticias 20s linear infinite;
 }
