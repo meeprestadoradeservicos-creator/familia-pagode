@@ -1,5 +1,5 @@
 // =========================
-// RELÓGIO
+// RELÃ“GIO
 // =========================
 
 function atualizarRelogio() {
@@ -31,24 +31,24 @@ function atualizarPainel() {
     let djAtual = "PROGRAMACAO INICIA AS 19:00";
     let proximoDJ = "DJ EDSON PAGODE";
 
-    if (hora >= 19 && hora < 20) {
-
-        djAtual = "DJ EDSON PAGODE";
-        proximoDJ = "DJ MILLA PAGODE";
-
-    } else if (hora >= 20 && hora < 21) {
+    if (hora >= 20 && hora < 21:20) {
 
         djAtual = "DJ MILLA PAGODE";
-        proximoDJ = "DJ ARLEY SA DREAMS";
+        proximoDJ = "DJ PEROLA HELSING ";
 
-    } else if (hora >= 21 && hora < 22) {
+    } else if (hora >= 21:20 && hora <22:30) {
 
-        djAtual = "DJ ARLEY SA DREAMS";
-        proximoDJ = "DJ PEROLA HELSING";
+        djAtual = "DJ PEROLA HELSING ";
+        proximoDJ = "DJ EDSON PAGODE ";
 
-    } else if (hora >= 22 && hora < 23) {
+    } else if (hora >= 22:30 && hora < 23:59) {
 
-        djAtual = "DJ PEROLA HELSING";
+        djAtual = "DJ EDSON PAGODE";
+        proximoDJ = "ENCERRAMENTOG";
+
+    } else if (hora >= 00 && hora < 00) {
+
+        djAtual = "DJEDSON PAGODE";
         proximoDJ = "ENCERRAMENTO";
 
     } else if (hora >= 23) {
