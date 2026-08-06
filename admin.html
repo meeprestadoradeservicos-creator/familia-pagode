@@ -4,80 +4,105 @@
 <head>
 
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Administração - DJ PRO 5.0 MASTER</title>
+<title>DJ PRO ADMIN 6.0</title>
 
 <link rel="stylesheet" href="admin.css">
+
 </head>
+
 
 <body>
 
-<div class="painel">
 
-    <img src="imagens/brasao.png" class="brasao">
+<div id="login">
 
-    <h1>DJ PRO 5.0 MASTER</h1>
+<h1>DJ PRO ADMIN</h1>
 
-    <h2>PAINEL DE ADMINISTRAÇÃO</h2>
+<h3>Digite a senha</h3>
 
-    <hr>
+<input type="password" id="senha">
 
-    <h3>DJ 1</h3>
-    <input type="text" id="dj1">
+<button onclick="entrar()">
+ENTRAR
+</button>
 
-    <h3>Horário</h3>
-    <input type="time" id="hora1">
-
-    <hr>
-
-    <h3>DJ 2</h3>
-    <input type="text" id="dj2">
-
-    <h3>Horário</h3>
-    <input type="time" id="hora2">
-
-    <hr>
-
-    <h3>DJ 3</h3>
-    <input type="text" id="dj3">
-
-    <h3>Horário</h3>
-    <input type="time" id="hora3">
-
-    <hr>
-
-    <h3>DJ 4</h3>
-    <input type="text" id="dj4">
-
-    <h3>Horário</h3>
-    <input type="time" id="hora4">
-
-    <hr>
-
-    <h3>Frase do Rodapé</h3>
-
-    <textarea id="frase" rows="4"></textarea>
-
-    <br><br>
-
-    <button class="botao" onclick="salvarConfiguracao()">
-
-        💾 SALVAR CONFIGURAÇÃO
-
-    </button>
-
-    <br><br>
-
-    <button class="botaoAdmin" onclick="window.location.href='painel.html'">
-
-        📺 ABRIR PAINEL
-
-    </button>
+<p id="erro"></p>
 
 </div>
 
-<script src="script.js"></script>
+
+
+<div id="painelAdmin" style="display:none">
+
+
+<h1>PAINEL DE CONTROLE</h1>
+
+
+<label>Nome da Festa</label>
+
+<input id="festa" value="NOME DA FESTA">
+
+
+
+<label>Programação dos DJs</label>
+
+<table id="tabelaDJ">
+
+    <thead>
+
+        <tr>
+
+            <th>Horário</th>
+
+            <th>Nome do DJ</th>
+
+            <th>Ação</th>
+
+        </tr>
+
+    </thead>
+
+    <tbody id="corpoTabela">
+
+    </tbody>
+
+</table>
+
+<br>
+
+<input type="time" id="novoHorario">
+
+<input
+type="text"
+id="novoDJ"
+placeholder="Nome do DJ">
+
+<button onclick="adicionarDJ()">
+
+➕ ADICIONAR DJ
+
+</button>
+
+<label>Notícias</label>
+
+<textarea id="noticias"></textarea>
+
+
+
+<button onclick="salvar()">
+
+SALVAR PROGRAMAÇÃO
+
+</button>
+
+
+</div>
+
+
+
+<script src="admin.js"></script>
+
 
 </body>
 

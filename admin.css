@@ -1,150 +1,161 @@
-body{
+*{
     margin:0;
-    background:#101010;
+    padding:0;
+    box-sizing:border-box;
     font-family:Arial, Helvetica, sans-serif;
-    color:white;
 }
 
-.painel{
 
-    width:700px;
+body{
 
-    margin:30px auto;
+    background:
+    radial-gradient(circle,
+    #222,
+    #050505);
 
-    background:#1d1d1d;
+    color:white;
 
-    border:3px solid #FFD700;
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+
+
+#login,
+#painelAdmin{
+
+    width:420px;
+
+    background:rgba(255,255,255,.08);
+
+    border:1px solid #00e5ff;
 
     border-radius:20px;
 
     padding:30px;
 
-    text-align:center;
-
-    box-shadow:0 0 25px #000;
-
-}
-
-.brasao{
-
-    width:170px;
-
-    margin-bottom:15px;
+    box-shadow:
+    0 0 20px #00e5ff;
 
 }
+
+
 
 h1{
 
+    text-align:center;
+
     color:#FFD700;
-
-    margin:10px 0;
-
-    font-size:36px;
-
-}
-
-h2{
-
-    color:white;
 
     margin-bottom:25px;
 
 }
 
+
+
 h3{
 
-    color:#FFD700;
+    text-align:center;
 
-    text-align:left;
-
-    margin-top:20px;
+    margin-bottom:20px;
 
 }
 
-input{
 
-    width:95%;
+
+label{
+
+    display:block;
+
+    color:#00e5ff;
+
+    margin-top:15px;
+
+    margin-bottom:5px;
+
+    font-weight:bold;
+
+}
+
+
+
+input,
+textarea{
+
+    width:100%;
 
     padding:12px;
 
-    font-size:18px;
+    background:#111;
 
-    border:none;
+    color:white;
 
-    border-radius:8px;
+    border:1px solid #FFD700;
+
+    border-radius:10px;
+
+    font-size:16px;
 
 }
+
+
 
 textarea{
 
-    width:95%;
+    height:100px;
 
-    padding:12px;
-
-    font-size:18px;
-
-    border:none;
-
-    border-radius:8px;
+    resize:none;
 
 }
 
-.botao{
 
-    width:320px;
+
+button{
+
+    width:100%;
+
+    margin-top:25px;
 
     padding:15px;
-
-    font-size:22px;
 
     background:#FFD700;
 
     color:#000;
 
-    border:none;
-
-    border-radius:10px;
-
-    cursor:pointer;
-
-}
-
-.botao:hover{
-
-    background:#FFE95A;
-
-}
-
-.botaoAdmin{
-
-    width:320px;
-
-    padding:15px;
-
-    font-size:22px;
-
-    background:#444;
-
-    color:white;
+    font-weight:bold;
 
     border:none;
 
-    border-radius:10px;
+    border-radius:12px;
 
     cursor:pointer;
 
-}
-
-.botaoAdmin:hover{
-
-    background:#666;
+    font-size:18px;
 
 }
 
-hr{
 
-    margin:30px 0;
 
-    border:1px solid #444;
+button:hover{
+
+    background:#00e5ff;
+
+}
+
+
+
+#erro{
+
+    color:red;
+
+    text-align:center;
+
+    margin-top:15px;
 
 }
